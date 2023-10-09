@@ -15,7 +15,7 @@ public class Arrays
         DecimalFormat df = new DecimalFormat("#0.###");
         System.out.println(df.format(ave[0]) + "\t");
 
-        System.out.println("\tTeam\t\tPlayed\tFor\tAve\tPts");    // print header
+        System.out.println("\tTeam\t\tPlayed\tFor\tAve.\tPts");    // print header
         int noTeams = names.length;                   // loop array size times
         for (int i = 0; i < noTeams; i++)
         {
