@@ -6,7 +6,7 @@ public class Main {
         Worm snake = new Worm(new Color(255,255,255));
         snake.print();
 
-        snake.move();
+        snake.move(new int[]{1, 2});
         snake.grow();
         snake.eat();
         snake.getSize();
