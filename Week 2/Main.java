@@ -41,12 +41,14 @@ class Worm {
         System.out.println("eat() called");
     }
 
-    void getSize() {
+    int getSize() {
         System.out.println("getSize() called");
+        return this.size;
     }
 
-    void setSize() {
+    void setSize(int new_size) {
         System.out.println("setSize() called");
+        this.size = new_size;
     }
 
     void start() {
