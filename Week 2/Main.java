@@ -9,7 +9,7 @@ public class Main {
         snake.grow();
         snake.eat();
         snake.getSize();
-        snake.setSize();
+        snake.setSize(10);
         snake.start();
     }
 }
