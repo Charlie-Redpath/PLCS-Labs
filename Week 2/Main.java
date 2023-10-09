@@ -8,8 +8,8 @@ public class Main {
         snake.move(new int[]{1, 2});
         snake.grow();
         snake.eat();
-        snake.getSize();
         snake.setSize(10);
+        System.out.println("I am now " + snake.getSize() + " size units™");
         snake.start();
     }
 }
