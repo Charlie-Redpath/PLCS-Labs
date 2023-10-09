@@ -1,8 +1,9 @@
 import java.awt.*;
+import java.util.Vector;
 
 public class Main {
     public static void main(String[] args) {
-        Worm snake = new Worm();
+        Worm snake = new Worm(new Color(255,255,255));
         snake.print();
 
         snake.move();
@@ -17,11 +18,13 @@ public class Main {
 class Worm {
     int size;
     String name;
-    Color color;
+    Color colour;
+    int[] pos;
 
-    Worm() {
+    Worm(Color colour) {
         size = 5;
         name = "Wiggly Worm";
+        this.colour = colour;
     }
 
     void print() {
@@ -29,8 +32,9 @@ class Worm {
         System.out.println("I grow 1 cm each year and I am " + size + " Years old. Happy birthday to me.");
     }
 
-    void move() {
+    void move(int[] new_pos) {
         System.out.println("move() called");
+        this.pos = new_pos;
     }
 
     void grow() {
